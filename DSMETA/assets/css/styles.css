@@ -10,10 +10,10 @@
 
 body{
     background-color: #000;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 a, a:hover, a:visited {
@@ -32,18 +32,12 @@ a, a:hover, a:visited {
     font-weight: 700;
 }
 
-main{
+/* main{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
-}
-
-.container{
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
+} */
 
 .container-header{
     display: flex;
@@ -60,7 +54,29 @@ main{
     width: 220px;
 }
 
-#form{
+#vendas-sec{
+    padding: 40px 10px;
+}
+
+
+.container-form{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card{
+    border-radius: 10px;
+    background-color: #283142;
+    padding: 30px 10px;
+}
+
+.card h2{
+    color: #676FFF;
+    margin-bottom: 20px;
+}
+
+.form{
     display: flex;
     flex-direction: column;
     margin-top: 5px;
@@ -68,39 +84,52 @@ main{
     left: 0;
 }
 
-#div-form{
-    border-radius: 10px;
-    background-color: #283142;
-    width: 90%;
-}
-
-#div-form h1{
-    color: #676FFF;
-}
-
-.data{
-    height: 30px;
+.input-data{
+    height: 46px;
     margin: 5px;
     border: solid #384459 1px;
     border-radius: 5px;
     background-color: #1B2531;
     color: #9AAABE;
+    padding: 0 20px;
+}
+
+.container-table{
+    padding: 10px;
+}
+
+.table-vendas{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.table-vendas thead{
+    height: 55px;
+}
+
+.icon{
+    background: #FF6B7210;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
 }
 
 @media(min-width: 371px){
-    .data{
+    .input-data{
         width: 300px;
     }
 }
 
 @media(max-width: 370px){
-    .data{
+    .input-data{
         width: 280px;
     }
 }
 
 @media(max-width: 320px){
-    .data{
+    .input-data{
         width: 100%;
     }
 }
