@@ -5,15 +5,10 @@
     padding: 0;
     font-family: 'Roboto';
     box-sizing: border-box;
-    color: #fff;
 }
 
 body{
     background-color: #000;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 a, a:hover, a:visited {
@@ -24,20 +19,15 @@ a, a:hover, a:visited {
 .container-header p{
     font-weight: 300;
     font-size: 14px;
+    color: #fff;
 }
 
 .container-header h1{
     margin-top: 15px;
     font-size: 24px;
     font-weight: 700;
+    color: #fff;
 }
-
-/* main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-} */
 
 .container-header{
     display: flex;
@@ -68,7 +58,7 @@ a, a:hover, a:visited {
 .card{
     border-radius: 10px;
     background-color: #283142;
-    padding: 30px 10px;
+    padding: 35px;
 }
 
 .card h2{
@@ -92,6 +82,8 @@ a, a:hover, a:visited {
     background-color: #1B2531;
     color: #9AAABE;
     padding: 0 20px;
+    font-size: 18px;
+    max-width: 300px;
 }
 
 .container-table{
@@ -100,12 +92,35 @@ a, a:hover, a:visited {
 
 .table-vendas{
     width: 100%;
-    padding: 5px;
-    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 .table-vendas thead{
     height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.table-vendas tbody{
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+    font-size: 18px;
+}
+
+.table-vendas tbody tr{
+    border-top: 1px solid #5F6E82;
+    height: 62px;
+}
+
+.table-vendas tbody tr:hover > td{
+    background-color: #384459;
+}
+
+.table-vendas tbody tr:nth-child(odd){
+    background-color: #242C3B;
 }
 
 .icon{
@@ -114,22 +129,30 @@ a, a:hover, a:visited {
     height: 45px;
     border: 1px solid #FF6B72;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-@media(min-width: 371px){
-    .input-data{
-        width: 300px;
+@media(max-width: 576px){
+    .none-576{
+        display: none;
     }
 }
 
-@media(max-width: 370px){
-    .input-data{
-        width: 280px;
+@media(max-width: 380px){
+    .card{
+        padding: 30px 10px;
     }
-}
 
-@media(max-width: 320px){
-    .input-data{
-        width: 100%;
+    .table-vendas{
+        font-size: 14px;
+    }
+
+    .table-vendas tbody tr{
+        height: 74px;
+        font-size: 18px;
+    }
+    
+    .none-320{
+        display: none;
     }
 }
