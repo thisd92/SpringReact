@@ -1,7 +1,13 @@
+import Button from "./components/Button";
+import Header from "./components/Header";
+
 function App() {
 
   return (
-    <h1>DSMeta</h1>
+    <div>
+      <Header />
+      <Button />
+    </div>
   )
 }
 
