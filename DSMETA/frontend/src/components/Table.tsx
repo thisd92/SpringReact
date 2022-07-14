@@ -25,7 +25,7 @@ function Table() {
                         <td className="none-576">11</td>
                         <td>R$ 55300.00</td>
                         <td>
-                            <Button />
+                            <Button saleId={1}/>
                         </td>
                     </tr>
                     <tr>
@@ -36,7 +36,7 @@ function Table() {
                         <td className="none-576">11</td>
                         <td>R$ 55300.00</td>
                         <td>
-                            <Button />
+                            <Button saleId={2} />
                         </td>                                </tr>
                     <tr>
                         <td className="none-576">#341</td>
@@ -46,7 +46,7 @@ function Table() {
                         <td className="none-576">11</td>
                         <td>R$ 55300.00</td>
                         <td>
-                            <Button />
+                            <Button saleId={3} />
                         </td>                                </tr>
                 </tbody>
             </table>
